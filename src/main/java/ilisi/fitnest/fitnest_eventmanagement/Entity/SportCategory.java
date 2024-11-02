@@ -17,5 +17,5 @@ public class SportCategory {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-    private String pathIcone;
+    private String iconName;
 }

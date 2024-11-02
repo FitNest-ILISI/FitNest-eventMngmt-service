@@ -1,7 +1,9 @@
 package ilisi.fitnest.fitnest_eventmanagement.Contoller;
 
 import ilisi.fitnest.fitnest_eventmanagement.Entity.Event;
+import ilisi.fitnest.fitnest_eventmanagement.Entity.SportCategory;
 import ilisi.fitnest.fitnest_eventmanagement.Service.EventService;
+import ilisi.fitnest.fitnest_eventmanagement.Service.SportCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -44,4 +46,6 @@ public class EventController {
         List<Event> events = eventService.getAllEvents();
         return ResponseEntity.ok(events);
     }
+
+
 }
